@@ -2,8 +2,8 @@
   "version": "2.0",
   "pipeline_stage": "validated",
   "title": "Visuomotor_task",
-  "description": "This dataset comprises intracranial electroencephalography (iEEG) recordings from ten epilepsy patients performing a visuomotor task (Speed Match) during interictal periods. The dataset includes continuous iEEG data across five sessions per subject, with detailed channel information and trial timing annotations for finger tapping events. This resource provides a unique opportunity to study neural correlates of visuomotor processing in patients with implanted electrodes for seizure localization.",
-  "methods_description": "Intracranial EEG was recorded from epilepsy patients undergoing clinical monitoring for seizure localization. Subjects completed five sessions of the Speed Match visuomotor task from the Lumosity platform. Continuous iEEG data were acquired in .edf format with channel details provided in accompanying .tsv files. Trial timing information, including start and end samples for finger tapping events, was annotated in the iEEG recordings.",
+  "description": "This dataset comprises intracranial electroencephalography (iEEG) recordings from ten epilepsy patients performing a visuomotor task (Speed Match) during interictal periods. The dataset includes continuous iEEG data across five sessions per subject, with detailed channel information and trial timing annotations. This resource provides a unique opportunity to investigate neural correlates of visuomotor processing in patients with implanted electrodes for seizure localization.",
+  "methods_description": "Intracranial EEG was recorded from epilepsy patients undergoing clinical monitoring for seizure localization. Subjects completed five sessions of the Speed Match visuomotor task on the Lumosity platform during interictal EEG recording. Raw iEEG data were acquired in .edf format with channel details provided in accompanying .tsv files. Trial timing information, including start and end samples for finger tapping events, was annotated in the iEEG recordings.",
   "license": "CC0",
   "dataset_type": "raw",
   "authors": {
@@ -15,6 +15,9 @@
       "term": "intracranial EEG"
     },
     {
+      "term": "iEEG"
+    },
+    {
       "term": "visuomotor task"
     },
     {
@@ -24,7 +27,7 @@
       "term": "motor control"
     },
     {
-      "term": "neural recording"
+      "term": "electrophysiology"
     }
   ],
   "related_identifiers": [
