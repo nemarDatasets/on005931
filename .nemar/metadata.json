@@ -1,33 +1,74 @@
 {
   "version": "2.0",
-  "dataset_id": "on005931",
-  "source": "openneuro",
-  "source_id": "ds005931",
+  "pipeline_stage": "validated",
   "title": "Visuomotor_task",
+  "license": "CC0",
+  "dataset_type": "raw",
   "authors": {
     "Riyo Ueda": {},
     "Eishi Asano": {}
   },
-  "license": "CC0",
-  "dataset_type": "raw",
   "related_identifiers": [
     {
       "identifier": "10.18112/openneuro.ds005931.v1.0.0",
       "identifier_type": "DOI",
       "relation_type": "IsIdenticalTo"
+    },
+    {
+      "identifier": "https://github.com/nemarDatasets/on005931",
+      "identifier_type": "URL",
+      "relation_type": "IsDescribedBy"
+    },
+    {
+      "identifier": "https://nemar.org/dataset/on005931",
+      "identifier_type": "URL",
+      "relation_type": "IsDescribedBy"
     }
-  ],
-  "pipeline_stage": "seeded",
-  "bids_version": "1.7.0",
-  "recording_modality": [
-    "ieeg"
-  ],
-  "datatypes": [
-    "ieeg"
   ],
   "funding_references": [
     {
       "funder_name": "N/A"
     }
-  ]
+  ],
+  "resource_type_general": "Dataset",
+  "modalities": [
+    "ieeg"
+  ],
+  "resource_type_specific": "iEEG Dataset",
+  "sizes": [
+    "0.0 KB (1 files)"
+  ],
+  "formats": [
+    ".edf",
+    ".json",
+    ".md",
+    ".tsv"
+  ],
+  "description": "This dataset comprises intracranial EEG recordings from ten epilepsy patients performing a visuomotor task (Speed Match) on the Lumosity platform. Subjects completed five sessions during interictal monitoring for seizure localization. The dataset includes continuous iEEG data in EDF format with channel information and trial timing annotations for finger tapping events.",
+  "methods_description": "Intracranial EEG was recorded from epilepsy patients undergoing clinical monitoring. Subjects performed five sessions of the Speed Match visuomotor task on the Lumosity platform during interictal EEG recording. Trial timing information (start and end samples) for finger tapping events is provided in the dataset.",
+  "keywords": [
+    {
+      "term": "intracranial EEG"
+    },
+    {
+      "term": "iEEG"
+    },
+    {
+      "term": "visuomotor task"
+    },
+    {
+      "term": "Epilepsy",
+      "subject_scheme": "MeSH",
+      "value_uri": "http://id.nlm.nih.gov/mesh/D004827"
+    },
+    {
+      "term": "motor control"
+    },
+    {
+      "term": "Electrophysiology",
+      "subject_scheme": "MeSH",
+      "value_uri": "http://id.nlm.nih.gov/mesh/D004594"
+    }
+  ],
+  "source_hash": "75428578d30cb284fa34246d3936a5ea8d27c4592b6fae57759b9337cfc411db"
 }
