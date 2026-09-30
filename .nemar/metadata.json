@@ -2,8 +2,8 @@
   "version": "2.0",
   "pipeline_stage": "validated",
   "title": "Visuomotor_task",
-  "description": "This dataset comprises intracranial EEG (iEEG) recordings from ten pediatric epilepsy patients undergoing intracranial monitoring for seizure localization, recorded while they performed a visuomotor task. Subjects completed five sessions of Speed Match, a finger-tapping visuomotor game on the Lumosity platform, during interictal periods. The dataset provides continuous iEEG signals along with trial timing information for finger tapping events, supporting research into visuomotor processing and cortical dynamics in epilepsy patients.",
-  "methods_description": "Intracranial EEG was recorded continuously in .edf format from epilepsy patients undergoing clinical monitoring while they performed a visuomotor finger-tapping task (Speed Match) on the Lumosity platform across five sessions. Trial onset and offset samples for finger tapping events (coded as 101) were annotated within the iEEG files, with channel information provided in accompanying .tsv files.",
+  "description": "An intracranial EEG (iEEG) dataset recorded from ten epilepsy patients undergoing invasive monitoring for seizure localization. Participants played five sessions of Speed Match, a visuomotor game on the Lumosity platform, during interictal recording. Continuous iEEG recordings are provided in EDF format with channel information and event markers for finger tapping.",
+  "methods_description": "Intracranial EEG was recorded continuously from epilepsy patients undergoing clinical monitoring while they completed five sessions of the Lumosity Speed Match visuomotor task. Finger-tapping events are marked by start and end samples of each trial in the EDF files.",
   "license": "CC0",
   "dataset_type": "raw",
   "authors": {
@@ -12,12 +12,10 @@
   },
   "keywords": [
     {
-      "term": "Electroencephalography",
-      "subject_scheme": "MeSH",
-      "value_uri": "http://id.nlm.nih.gov/mesh/D004569"
+      "term": "intracranial EEG"
     },
     {
-      "term": "intracranial EEG"
+      "term": "visuomotor task"
     },
     {
       "term": "Epilepsy",
@@ -25,13 +23,15 @@
       "value_uri": "http://id.nlm.nih.gov/mesh/D004827"
     },
     {
-      "term": "visuomotor task"
+      "term": "Electrocorticography",
+      "subject_scheme": "MeSH",
+      "value_uri": "http://id.nlm.nih.gov/mesh/D000069280"
     },
     {
       "term": "finger tapping"
     },
     {
-      "term": "iEEG"
+      "term": "interictal recording"
     }
   ],
   "related_identifiers": [
@@ -62,7 +62,7 @@
     "ieeg"
   ],
   "sizes": [
-    "857.2 MB (17 files)"
+    "817 MB (17 files)"
   ],
   "formats": [
     ".edf",
