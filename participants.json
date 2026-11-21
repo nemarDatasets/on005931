@@ -2,8 +2,6 @@
   "age": {
     "LongName": "",
     "Description": "age of the participant",
-    "Levels": {
-    },
     "Units": "years",
     "TermURL": "http://www.todo.com/fixme"
   },
@@ -11,18 +9,18 @@
     "LongName": "",
     "Description": "sex of the participant as reported by the participant",
     "Levels": {
-      "m": "male",
-      "f": "female"
+      "Male": "male",
+      "Female": "female"
     },
     "Units": "",
     "TermURL": "http://www.todo.com/fixme"
   },
-  "handedness": {
+  "sampled_hemisphere": {
     "LongName": "",
     "Description": "sampled hemisphere of the participant as reported by the participant",
     "Levels": {
-      "Lt": "left",
-      "Rt": "right"
+      "Left": "left",
+      "Right": "right"
     },
     "Units": "",
     "TermURL": "http://www.todo.com/fixme"
