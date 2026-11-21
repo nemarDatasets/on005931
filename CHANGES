@@ -1,7 +1,9 @@
 1.0.1 2026-10-22
-  - Add 2 unambiguous source-label alias encodings using existing category keys/definitions;
-    retain every original definition and all participant/electrode table bytes. No new clinical
-    meaning or data recoding. Exact original schema retained in sourcedata/participants.json.
+  - participants.json now matches the header and values of participants.tsv:
+    sex Levels "m"/"f" -> "Male"/"Female"; key handedness renamed to sampled_hemisphere
+    (its Description already said "sampled hemisphere"), with Levels "Lt"/"Rt" -> "Left"/"Right".
+    Level descriptions are unchanged, and participants.tsv and every electrodes.tsv are byte-identical.
+    The schema before these edits is retained in sourcedata/participants.json.
   - Remove 1 empty Levels enumerations from participants.json; no defined categories
     or participant table values change. Exact source schema retained under
     sourcedata/participant-schema-before-empty-enum-fix/participants.json.
