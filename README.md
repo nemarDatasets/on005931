@@ -28,10 +28,10 @@ Rows were matched to header channels BY NAME, never by position (exact; then cas
 
 Applied by position, the former rows would have given wrong labels to 982 channels in 16 files (rows missing, extra or out of order before that position).
 
-electrodes.tsv is unchanged: it names the contacts (e.g. `A1`), while channel names follow the recorder (e.g. `A1-AV`); to attach positions in MNE, map channel names to contact names first, e.g. `raw.rename_channels(lambda n: re.sub(r'-[A-Za-z0-9]+$', '', n))`.
+electrodes.tsv is unchanged and keeps the contact names (e.g. `A1`), while channels.tsv follows the recording headers (e.g. `POL A1`, `EEG M2-Ref`). To pair a channel with its contact, drop a leading `POL ` or `EEG ` and a trailing reference suffix (`-Ref`, `-AV`).
 
 ## Electrode locations (19 Oct 2026)
 
-Add coordsystem.json MNI305/mm next to 16 electrodes.tsv. Evidence: Wayne State (Asano/Kanno/Kochi) deposits use FreeSurfer-standard (MNI305/fsaverage) electrode coordinates; MNI305 is a millimetre space by definition. No OpenNeuro S3 version of this dataset ever held a coordsystem.json (all versions listed 2026-10-19). Paper PMC12829438 (section 2.2): FreeSurfer used "to normalize each electrode site to a Montreal Neurological Institute (MNI)-standard brain coordinate" (FreeSurfer's MNI space is MNI305); 10 of the 16 electrodes files are byte-identical to ds006234/on006233 (README MNI-305) and 8 to on007119 (fsaverage / mm).
+Add coordsystem.json fsaverage/mm next to 16 electrodes.tsv. Evidence: Wayne State (Asano/Kanno/Kochi) deposits use FreeSurfer-standard (MNI305/fsaverage) electrode coordinates; MNI305 is a millimetre space by definition. No OpenNeuro S3 version of this dataset ever held a coordsystem.json (all versions listed 2026-10-19). Paper PMC12829438 (section 2.2): FreeSurfer used "to normalize each electrode site to a Montreal Neurological Institute (MNI)-standard brain coordinate" (FreeSurfer's MNI space is MNI305); the coordinates are identical (within 0.001 mm) in 12 of the 16 files to ds006233 (README MNI-305) and 8 to on007119 (fsaverage / mm). Every contact of the 16 files (1724 in all) lies on a vertex of the fsaverage pial surface (within 0.001 mm), so the frame is labeled fsaverage.
 
 This dataset mirrors OpenNeuro; the same change belongs upstream.
