@@ -2,8 +2,8 @@
   "version": "2.0",
   "pipeline_stage": "validated",
   "title": "Visuomotor_task",
-  "description": "An intracranial EEG (iEEG) dataset recorded from ten epilepsy patients undergoing invasive monitoring for seizure localization. Participants played five sessions of Speed Match, a visuomotor game on the Lumosity platform, during interictal recording. Continuous iEEG recordings are provided in EDF format with channel information and event markers for finger tapping.",
-  "methods_description": "Intracranial EEG was recorded continuously from epilepsy patients undergoing clinical monitoring while they completed five sessions of the Lumosity Speed Match visuomotor task. Finger-tapping events are marked by start and end samples of each trial in the EDF files.",
+  "description": "Intracranial EEG (iEEG) recordings from ten epilepsy patients undergoing invasive monitoring for seizure localization while they played Speed Match, a visuomotor game on the Lumosity platform. Each subject completed five sessions, and the continuous interictal recordings are provided in EDF format with channel and electrode metadata. Trial timing of finger tapping is annotated in the recordings.",
+  "methods_description": "Interictal iEEG was recorded from epilepsy patients with intracranial electrodes while they completed five sessions of the Speed Match visuomotor task. Finger-tapping events are marked by start and end samples of each trial. Electrode coordinates were normalized to MNI/fsaverage space using FreeSurfer.",
   "license": "CC0",
   "dataset_type": "raw",
   "authors": {
@@ -15,7 +15,9 @@
       "term": "intracranial EEG"
     },
     {
-      "term": "visuomotor task"
+      "term": "Electrocorticography",
+      "subject_scheme": "MeSH",
+      "value_uri": "http://id.nlm.nih.gov/mesh/D000069280"
     },
     {
       "term": "Epilepsy",
@@ -23,9 +25,7 @@
       "value_uri": "http://id.nlm.nih.gov/mesh/D004827"
     },
     {
-      "term": "Electrocorticography",
-      "subject_scheme": "MeSH",
-      "value_uri": "http://id.nlm.nih.gov/mesh/D000069280"
+      "term": "visuomotor task"
     },
     {
       "term": "finger tapping"
@@ -71,5 +71,5 @@
     ".tsv",
     ".yml"
   ],
-  "source_hash": "02157a915e6c3751e22959e885b4341e274dad365df432b848152a379dd8f377"
+  "source_hash": "886e17ad2171d52e74fcfd40febccffb4b6778b03a82e55ee3efc04b00d70597"
 }
